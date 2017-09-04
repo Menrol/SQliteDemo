@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SQliteManager.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    if ([[SQliteManager sharedManager] open]) {
+        NSLog(@"打开成功");
+    }else {
+        NSLog(@"打开失败");
+    }
     return YES;
 }
 

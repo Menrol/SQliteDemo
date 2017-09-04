@@ -15,6 +15,10 @@
 		184280CF1F5951B40031B4C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184280CD1F5951B40031B4C3 /* LaunchScreen.storyboard */; };
 		184280DA1F5951B40031B4C3 /* SQlite__OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 184280D91F5951B40031B4C3 /* SQlite__OCTests.m */; };
 		184280E51F5951B40031B4C3 /* SQlite__OCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 184280E41F5951B40031B4C3 /* SQlite__OCUITests.m */; };
+		184280F41F5952590031B4C3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 184280F31F5952590031B4C3 /* libsqlite3.tbd */; };
+		184280FA1F59529E0031B4C3 /* SQliteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 184280F91F59529E0031B4C3 /* SQliteManager.m */; };
+		184281001F59647F0031B4C3 /* db.sql in Resources */ = {isa = PBXBuildFile; fileRef = 184280FF1F59647F0031B4C3 /* db.sql */; };
+		184281031F596E410031B4C3 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 184281021F596E410031B4C3 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		184280E01F5951B40031B4C3 /* SQlite演练OCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SQlite演练OCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		184280E41F5951B40031B4C3 /* SQlite__OCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQlite__OCUITests.m; sourceTree = "<group>"; };
 		184280E61F5951B40031B4C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184280F31F5952590031B4C3 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		184280F81F59529E0031B4C3 /* SQliteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQliteManager.h; sourceTree = "<group>"; };
+		184280F91F59529E0031B4C3 /* SQliteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQliteManager.m; sourceTree = "<group>"; };
+		184280FF1F59647F0031B4C3 /* db.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = db.sql; sourceTree = "<group>"; };
+		184281011F596E410031B4C3 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		184281021F596E410031B4C3 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184280F41F5952590031B4C3 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +96,7 @@
 				184280D81F5951B40031B4C3 /* SQlite演练OCTests */,
 				184280E31F5951B40031B4C3 /* SQlite演练OCUITests */,
 				184280BD1F5951B40031B4C3 /* Products */,
+				184280F21F5952580031B4C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +113,15 @@
 		184280BE1F5951B40031B4C3 /* SQlite演练OC */ = {
 			isa = PBXGroup;
 			children = (
+				184280FF1F59647F0031B4C3 /* db.sql */,
 				184280C21F5951B40031B4C3 /* AppDelegate.h */,
 				184280C31F5951B40031B4C3 /* AppDelegate.m */,
 				184280C51F5951B40031B4C3 /* ViewController.h */,
 				184280C61F5951B40031B4C3 /* ViewController.m */,
+				184280F81F59529E0031B4C3 /* SQliteManager.h */,
+				184280F91F59529E0031B4C3 /* SQliteManager.m */,
+				184281011F596E410031B4C3 /* Person.h */,
+				184281021F596E410031B4C3 /* Person.m */,
 				184280C81F5951B40031B4C3 /* Main.storyboard */,
 				184280CB1F5951B40031B4C3 /* Assets.xcassets */,
 				184280CD1F5951B40031B4C3 /* LaunchScreen.storyboard */,
@@ -138,6 +155,14 @@
 				184280E61F5951B40031B4C3 /* Info.plist */,
 			);
 			path = "SQlite演练OCUITests";
+			sourceTree = "<group>";
+		};
+		184280F21F5952580031B4C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				184280F31F5952590031B4C3 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +276,7 @@
 			files = (
 				184280CF1F5951B40031B4C3 /* LaunchScreen.storyboard in Resources */,
 				184280CC1F5951B40031B4C3 /* Assets.xcassets in Resources */,
+				184281001F59647F0031B4C3 /* db.sql in Resources */,
 				184280CA1F5951B40031B4C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,7 +304,9 @@
 			files = (
 				184280C71F5951B40031B4C3 /* ViewController.m in Sources */,
 				184280C41F5951B40031B4C3 /* AppDelegate.m in Sources */,
+				184281031F596E410031B4C3 /* Person.m in Sources */,
 				184280C11F5951B40031B4C3 /* main.m in Sources */,
+				184280FA1F59529E0031B4C3 /* SQliteManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
